@@ -18,6 +18,12 @@ export interface ThemeProps {
   header: {
     background: string;
     fontFamily: string;
+    logo: {
+      width: string;
+      height: string;
+      src: string;
+      title: string;
+    };
   };
   footer: {
     background: string;

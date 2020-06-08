@@ -1,4 +1,4 @@
-import logo from '../../assets/img/logo-marfeel.svg';
+import logo from './../assets/img/logo-marfeel.svg';
 import { ThemeProps } from './types';
 
 export const theme: ThemeProps = {
@@ -37,6 +37,12 @@ export const theme: ThemeProps = {
   header: {
     background: 'rgb(0,0,0)',
     fontFamily: 'Roboto',
+    logo: {
+      width: '100px',
+      height: '25px',
+      src: logo,
+      title: 'Logo',
+    },
   },
   footer: {
     background: '#f2f2f2',
