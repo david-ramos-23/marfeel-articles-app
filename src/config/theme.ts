@@ -8,6 +8,10 @@ export const theme: ThemeProps = {
   },
   sizes: {
     size1: '10px',
+    size2: '15px',
+    size3: '20px',
+    size4: '40px',
+    size5: '50px',
   },
   sideMenu: {
     headerBackground: 'rgb(2,0,36)',
