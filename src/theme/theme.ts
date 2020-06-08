@@ -62,6 +62,10 @@ export const theme: ThemeProps = {
         'SECTION 10',
       ],
     },
+    menu: {
+      color: 'white',
+      background: 'linear-gradient(to bottom, #fd8d00 0%,#98cd00 100%)',
+    },
   },
   footer: {
     background: '#f2f2f2',

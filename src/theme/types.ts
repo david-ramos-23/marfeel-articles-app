@@ -32,6 +32,10 @@ export interface ThemeProps {
       colour: string;
       items: string[];
     };
+    menu: {
+      color: string;
+      background: string;
+    };
   };
   footer: {
     background: string;

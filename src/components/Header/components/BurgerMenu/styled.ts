@@ -7,7 +7,6 @@ export const StyledBurgerMenu = styled.button`
   border: none;
   -webkit-appearance: unset;
 
-
   width: 20px;
   height: 16px;
   position: absolute;
@@ -20,7 +19,7 @@ export const StyledBurgerMenuBody = styled.div`
   position: absolute;
   top: 7px;
   border-radius: 2px;
-  background-color: white;
+  background-color: ${({ theme }) => theme.header.menu.color};
 
   :before,
   :after {
@@ -29,7 +28,7 @@ export const StyledBurgerMenuBody = styled.div`
     content: '';
     width: 20px;
     height: 2px;
-    background-color: white;
+    background-color: ${({ theme }) => theme.header.menu.color};
     border-radius: 2px;
   }
 
@@ -40,4 +39,16 @@ export const StyledBurgerMenuBody = styled.div`
   :after {
     bottom: -6px;
   }
+`;
+
+export const StyledBurgerMenuWrapper = styled.div`
+  position: fixed;
+  top: 3px;
+  left: 5px;
+  width: 20px;
+  height: 16px;
+  padding: 12px 10px 12px 10px;
+  background: ${({ theme }) => theme.header.menu.background};
+  border-radius: 50%;
+  cursor: pointer;
 `;

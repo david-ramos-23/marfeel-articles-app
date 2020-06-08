@@ -14,4 +14,5 @@ export const StyledMainMediaBlock = styled(MediaBlock)`
 
 export const StyledMain = styled.section`
   padding: ${(props) => props.theme.sizes.size1};
+  margin-top: 65px;
 `;
