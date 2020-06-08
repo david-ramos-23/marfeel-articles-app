@@ -34,4 +34,11 @@ export const theme: ThemeProps = {
     background: 'rgb(0,0,0)',
     fontFamily: 'Roboto',
   },
+  footer: {
+    background: '#f2f2f2',
+    textColor: '#888',
+    fontFamily: 'Open Sans',
+    fontWeight: '200',
+    fontSize: '12px',
+  },
 };

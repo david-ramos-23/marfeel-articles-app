@@ -8,6 +8,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-google-font-loader": "^1.1.0",
     "react-placeholder": "^4.0.2",
     "react-redux": "^7.2.0",
     "react-redux-loading-bar": "^4.6.0",

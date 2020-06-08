@@ -19,4 +19,11 @@ export interface ThemeProps {
     background: string;
     fontFamily: string;
   };
+  footer: {
+    background: string;
+    textColor: string;
+    fontFamily: string;
+    fontWeight: string;
+    fontSize: string;
+  };
 }
