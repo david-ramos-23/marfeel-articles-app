@@ -24,6 +24,14 @@ export interface ThemeProps {
       src: string;
       title: string;
     };
+    section: {
+      fontWeight: string;
+      fontSize: string;
+      borderWidth: string;
+      itemPadding: string;
+      colour: string;
+      items: string[];
+    };
   };
   footer: {
     background: string;
