@@ -8,18 +8,22 @@ import { Main } from '../components/Main/Main';
 import { fonts } from '../theme/fonts';
 import GoogleFontLoader from 'react-google-font-loader';
 import theme from '../theme';
+import configureStore from '../store';
+import { Provider } from 'react-redux';
 
 export class App extends React.PureComponent {
   public render(): JSX.Element {
     return (
-      <ThemeProvider theme={theme}>
-        <>
-          <GoogleFontLoader fonts={fonts} />
-          <Header />
-          <Main />
-          <Footer />
-        </>
-      </ThemeProvider>
+      <Provider store={configureStore()}>
+        <ThemeProvider theme={theme}>
+          <>
+            <GoogleFontLoader fonts={fonts} />
+            <Header />
+            <Main />
+            <Footer />
+          </>
+        </ThemeProvider>
+      </Provider>
     );
   }
 }
