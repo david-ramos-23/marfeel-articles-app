@@ -1,10 +1,10 @@
-import { applyMiddleware, createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import reduxThunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import thunkMiddleware from 'redux-thunk';
 import rootReducer from '../ducks';
 
 const configureStore = () => {
-  const middlewares = [thunkMiddleware];
+  const middlewares = [reduxThunk];
   const middleWareEnhancer = applyMiddleware(...middlewares);
 
   const store = createStore(
