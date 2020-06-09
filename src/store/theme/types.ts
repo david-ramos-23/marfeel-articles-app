@@ -1,4 +1,4 @@
-export interface ThemeProps {
+export interface ThemeState {
   colors: {
     [color: string]: string;
   };
@@ -45,3 +45,13 @@ export interface ThemeProps {
     fontSize: string;
   };
 }
+
+// Describing the different ACTION NAMES available
+export const LOAD_THEME = 'LOAD_THEME';
+
+interface LoadThemeAction {
+  type: typeof LOAD_THEME;
+  theme: ThemeState;
+}
+
+export type ThemeActionTypes = LoadThemeAction;

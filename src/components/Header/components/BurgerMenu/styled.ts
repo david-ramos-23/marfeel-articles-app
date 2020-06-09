@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledBurgerMenu = styled.button`
   // reset
   padding: 0;
-  background: none
+  background: none;
   border: none;
   -webkit-appearance: unset;
 

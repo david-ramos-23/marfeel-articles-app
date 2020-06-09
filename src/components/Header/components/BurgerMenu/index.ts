@@ -1,1 +1,1 @@
-export * from './BurgerMenu';
+export { BurgerMenuContainer as BurgerMenu } from './container';

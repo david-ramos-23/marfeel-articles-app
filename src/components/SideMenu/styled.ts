@@ -1,20 +1,35 @@
 import styled from 'styled-components';
 
-import { StyledLinkProps } from './types';
+import {
+  StyledLinkProps,
+  StyledSideMenuProps,
+  StyledTransparentProps,
+} from './types';
 
-export const StyledSideMenu = styled.div`
+export const StyledTransparent = styled.div<StyledTransparentProps>`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
+`;
+
+export const StyledSideMenu = styled.div<StyledSideMenuProps>`
   position: fixed;
   top: 0;
   left: 0;
   width: 300px;
   height: 100vh;
   background: white;
-  display: flex;
   flex-direction: column;
   box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.4);
   font-family: '${(props) => props.theme.sideMenu.fontFamily}', sans-serif;
   font-size: ${(props) => props.theme.sideMenu.fontSize};
   font-weight: ${(props) => props.theme.sideMenu.fontWeight};
+  transition: transform .2s;
+  transform: translate3d(${({ isVisible }) =>
+    isVisible ? '0' : '-105%'}, 0, 0);
 `;
 
 export const StyledHeader = styled.header`

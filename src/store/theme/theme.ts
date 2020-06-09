@@ -1,10 +1,13 @@
-import logo from './../assets/img/logo-marfeel.svg';
-import { ThemeProps } from './types';
+import { ThemeState } from './types';
+import logo from './../../assets/img/logo-marfeel.svg';
 
-export const theme: ThemeProps = {
+export const defaultTheme: ThemeState = {
   colors: {
     primary: 'black',
     secondary: 'white',
+    gray1: '#E0E0E0',
+    gray2: '#f2f2f2',
+    gray3: '#b9b9b9',
   },
   sizes: {
     size1: '10px',
@@ -14,7 +17,7 @@ export const theme: ThemeProps = {
     size5: '50px',
   },
   sideMenu: {
-    headerBackground: 'rgb(2,0,36)',
+    headerBackground: 'rgb(0,0,0)',
     bodyBackground: 'white',
     linkColor: '#b9b9b9',
     linkColorActive: '#de0000',

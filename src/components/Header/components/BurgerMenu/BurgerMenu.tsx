@@ -7,18 +7,24 @@ import {
 } from './styled';
 import { BurgerMenuProps } from './types';
 
-export const BurgerMenu: React.FunctionComponent<BurgerMenuProps> = ({
-  showWrapper,
-}) => {
-  const button = (
-    <StyledBurgerMenu>
-      <StyledBurgerMenuBody />
-    </StyledBurgerMenu>
-  );
+export class BurgerMenu extends React.PureComponent<BurgerMenuProps> {
+  public render(): JSX.Element {
+    const { showWrapper } = this.props;
 
-  if (showWrapper) {
-    return <StyledBurgerMenuWrapper>{button}</StyledBurgerMenuWrapper>;
+    const button = (
+      <StyledBurgerMenu onClick={this.handleClick}>
+        <StyledBurgerMenuBody />
+      </StyledBurgerMenu>
+    );
+
+    if (showWrapper) {
+      return <StyledBurgerMenuWrapper>{button}</StyledBurgerMenuWrapper>;
+    }
+
+    return button;
   }
 
-  return button;
-};
+  private handleClick = () => {
+    this.props.toggleSideMenu();
+  };
+}
