@@ -1,10 +1,11 @@
 import React from 'react';
+import LoadingBar from 'react-redux-loading-bar';
+import { HEADER_WAYPOINTS } from '../../config/header';
 import { Logo } from '../shared/Logo';
 import { BurgerMenu } from './components/BurgerMenu';
 import { Section } from './components/Section';
 import { StyledHeader, StyledHeaderTitle, StyledHeaderTop } from './styled';
 import { HeaderState } from './types';
-import { HEADER_WAYPOINTS } from '../../config/header';
 
 let ticking = false;
 
@@ -51,6 +52,7 @@ export class Header extends React.PureComponent<unknown, HeaderState> {
 
     return (
       <StyledHeader>
+        <LoadingBar />
         <StyledHeaderTop>
           <BurgerMenu />
           <StyledHeaderTitle>

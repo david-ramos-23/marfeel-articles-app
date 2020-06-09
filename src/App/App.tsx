@@ -8,11 +8,16 @@ import { Header } from '../components/Header';
 import { Main } from '../components/Main';
 import { SideMenu } from '../components/SideMenu';
 import { fonts } from '../config/consts';
+import api from '../services';
 import { AppProps } from './types';
 
 export class App extends React.PureComponent<AppProps> {
   public componentDidMount(): void {
     this.props.loadTheme();
+  }
+
+  public componentWillUnmount(): void {
+    api.getTheme.restore();
   }
 
   public render(): JSX.Element {
