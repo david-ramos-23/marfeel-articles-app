@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSection } from '../../hooks';
-import { STATUS } from '../../hooks/useSection';
 import Article from '../Article/Article';
 import { ArticleState } from '../Article/types';
 import { StyledArticleList } from './styled';
+import { STATUS } from '../../hooks/useSection';
 
 export const ArticleList: React.FunctionComponent = () => {
   const [{ selected, articles, status }, { getSection }] = useSection();

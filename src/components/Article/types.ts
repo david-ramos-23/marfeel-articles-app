@@ -2,7 +2,7 @@ export interface ArticleState {
   id: number;
   title: string;
   description: string;
-  thumbnail: string;
+  thumbnail?: string;
 }
 
 export interface StyledArticleProps {

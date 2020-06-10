@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders without crashing 1`] = `
+Array [
+  <header
+    className="sc-fzqBZW gIrmBJ"
+  >
+    <div />
+    <section
+      className="sc-fzqNJr bTRQDu"
+    >
+      <button
+        className="sc-fzoLsD MgXfQ"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-fzpans YIAQv"
+        />
+      </button>
+      <div
+        className="sc-fzoyAV fRWUNs"
+      >
+        <img
+          alt="Logo"
+          className="sc-fzozJi gNayaJ"
+          src="logo-marfeel.svg"
+        />
+      </div>
+    </section>
+    <nav
+      className="sc-fznyAO bxLxaK"
+    >
+      <ul
+        className="sc-fznKkj kHquXd"
+      >
+        <li
+          className="sc-fznZeY gwNUTe"
+        >
+          <a
+            className="sc-fzokOt fOaGtf"
+            href="#1"
+            onClick={[Function]}
+            selected={true}
+          >
+            HOME
+          </a>
+        </li>
+        <li
+          className="sc-fznZeY gwNUTe"
+        >
+          <a
+            className="sc-fzokOt ctaBng"
+            href="#2"
+            onClick={[Function]}
+            selected={false}
+          >
+            TRAVELS
+          </a>
+        </li>
+        <li
+          className="sc-fznZeY gwNUTe"
+        >
+          <a
+            className="sc-fzokOt ctaBng"
+            href="#3"
+            onClick={[Function]}
+            selected={false}
+          >
+            TECH
+          </a>
+        </li>
+        <li
+          className="sc-fznZeY gwNUTe"
+        >
+          <a
+            className="sc-fzokOt ctaBng"
+            href="#4"
+            onClick={[Function]}
+            selected={false}
+          >
+            NATIONAL
+          </a>
+        </li>
+        <li
+          className="sc-fznZeY gwNUTe"
+        >
+          <a
+            className="sc-fzokOt ctaBng"
+            href="#5"
+            onClick={[Function]}
+            selected={false}
+          >
+            INTERNATIONAL
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>,
+  <section
+    className="sc-AxheI dRPfAF"
+  />,
+  <footer
+    className="sc-Axmtr krLLiE"
+  >
+    <div
+      className="sc-AxmLO hgdTff"
+    >
+      �Copyright 2020 - marfeel.com
+    </div>
+  </footer>,
+  <div
+    className="sc-fzoLag kzFhbn"
+    onClick={[Function]}
+  />,
+  <div
+    className="sc-fzoXzr eOeUjM"
+  >
+    <header
+      className="sc-fzpjYC dALNtZ"
+    >
+      <img
+        alt="Logo"
+        className="sc-fzozJi gNayaJ"
+        src="logo-marfeel.svg"
+      />
+    </header>
+    <nav
+      className="sc-fznxsB epyCZq"
+    >
+      <ul
+        className="sc-fznJRM jzZaHF"
+      >
+        <li
+          className="sc-fznWqX haNDGY"
+        >
+          <a
+            className="sc-fzoiQi kAOSFW"
+            href="#1"
+            onClick={[Function]}
+          >
+            HOME
+          </a>
+        </li>
+        <li
+          className="sc-fznWqX haNDGY"
+        >
+          <a
+            className="sc-fzoiQi eBoAcE"
+            href="#2"
+            onClick={[Function]}
+          >
+            TRAVELS
+          </a>
+        </li>
+        <li
+          className="sc-fznWqX haNDGY"
+        >
+          <a
+            className="sc-fzoiQi eBoAcE"
+            href="#3"
+            onClick={[Function]}
+          >
+            TECH
+          </a>
+        </li>
+        <li
+          className="sc-fznWqX haNDGY"
+        >
+          <a
+            className="sc-fzoiQi eBoAcE"
+            href="#4"
+            onClick={[Function]}
+          >
+            NATIONAL
+          </a>
+        </li>
+        <li
+          className="sc-fznWqX haNDGY"
+        >
+          <a
+            className="sc-fzoiQi eBoAcE"
+            href="#5"
+            onClick={[Function]}
+          >
+            INTERNATIONAL
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>,
+]
+`;
