@@ -4,6 +4,6 @@ import { StyledFooter, StyledFooterBody } from './styled';
 
 export const Footer: React.FunctionComponent = () => (
   <StyledFooter>
-    <StyledFooterBody>ï¿½Copyright 2020 - marfeel.com</StyledFooterBody>
+    <StyledFooterBody>©Copyright 2020 - marfeel.com</StyledFooterBody>
   </StyledFooter>
 );

@@ -32,14 +32,13 @@ export const StyledItem = styled.li<StyledItemProps>`
 export const StyledLink = styled.a<StyledItemProps>`
   display: block;
   padding-bottom: ${(props) => props.theme.header.section.itemPadding};
-  ${(props) => {
-    const { isActive } = props;
-    console.log('link', isActive);
+  border-bottom: ${(props) => {
+    const { selected } = props;
     const { borderWidth, colour } = props.theme.header.section;
-    if (isActive) {
-      return `border-bottom: ${borderWidth} solid ${colour};`;
+    if (selected) {
+      return `${borderWidth} solid ${colour};`;
     }
-  }}
+  }};
   color: inherit;
   text-decoration: none;
 `;

@@ -1,3 +1,4 @@
 export interface StyledItemProps {
-  isActive?: boolean;
+  selected?: boolean;
+  onClick?: any;
 }

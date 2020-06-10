@@ -1,6 +1,6 @@
 import React from 'react';
 import LoadingBar from 'react-redux-loading-bar';
-import { HEADER_WAYPOINTS } from '../../config/header';
+import { HEADER_WAYPOINTS } from '../../config/consts';
 import { Logo } from '../shared/Logo';
 import { BurgerMenu } from './components/BurgerMenu';
 import { Section } from './components/Section';

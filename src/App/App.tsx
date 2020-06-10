@@ -3,11 +3,12 @@ import React from 'react';
 import GoogleFontLoader from 'react-google-font-loader';
 import 'react-placeholder/lib/reactPlaceholder.css';
 import { ThemeProvider } from 'styled-components';
+import { ArticleList } from '../components/ArticleList';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
-import { Main } from '../components/Main';
 import { SideMenu } from '../components/SideMenu';
 import { fonts } from '../config/consts';
+import { SectionProvider } from '../hooks/useSection';
 import api from '../services';
 import { AppProps } from './types';
 
@@ -17,7 +18,7 @@ export class App extends React.PureComponent<AppProps> {
   }
 
   public componentWillUnmount(): void {
-    api.getTheme.restore();
+    api.restore();
   }
 
   public render(): JSX.Element {
@@ -25,8 +26,10 @@ export class App extends React.PureComponent<AppProps> {
       <ThemeProvider theme={this.props.theme}>
         <>
           <GoogleFontLoader fonts={fonts} />
-          <Header />
-          <Main />
+          <SectionProvider>
+            <Header />
+            <ArticleList />
+          </SectionProvider>
           <Footer />
           <SideMenu />
         </>

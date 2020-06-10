@@ -37,6 +37,9 @@ export interface ThemeState {
       background: string;
     };
   };
+  articles: {
+    fontFamily: string;
+  };
   footer: {
     background: string;
     textColor: string;
