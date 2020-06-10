@@ -19,44 +19,44 @@ The unit tests are located in `src/**/__tests__/`.
 
 - `npm test` runs all the tests
 
-[x] actions
+[ x ] actions
 
-[x] reducers
+[ x ] reducers
 
-[x] Hooks
+[ x ] Hooks
 
-[x] `<App />` component - `App.test.tsx`: snapshot & lifecycle testing
+[ x ] `<App />` component - `App.test.tsx`: snapshot & lifecycle testing
 
-[x] `<Header />` component - `Header.test.tsx`: snapshot & `handleScroll` method testing
+[ x ] `<Header />` component - `Header.test.tsx`: snapshot & `handleScroll` method testing
 
-[x] `<Articles />` component - `Articles.test.tsx`: snapshot & lifecycle testing
+[ x ] `<Articles />` component - `Articles.test.tsx`: snapshot & lifecycle testing
 
-[x] `<ArticleList />` component - `ArticleList.test.tsx`: snapshot & lifecycle testing
+[ x ] `<ArticleList />` component - `ArticleList.test.tsx`: snapshot & lifecycle testing
 
 ## ⭐️ Features
 
-[x] TypeScript
+[ x ] TypeScript
 
-[x] ESLint, Prettier, Lint-Staged, Husky
+[ x ] ESLint, Prettier, Lint-Staged, Husky
 
-[x] Redux, Redux Thunks & Hooks.
+[ x ] Redux, Redux Thunks & Hooks.
 Used different ways to manage the state.
 
-[x] StyledComponents
+[ x ] StyledComponents
 The customizations are loaded through the ThemeProvider. The default theme configuration can be found in `src/store/theme/theme.ts`
 
-[x] Jest + enzyme
+[ x ] Jest + enzyme
 
-[x] Axios
+[ x ] Axios
 When the app is launched the default theme is used and after 2 seconds the light theme is loaded, using `axiox-mock-adapter`
 
-[x] `react-redux-loading-bar`. As a progress bar displayed on top.
+[ x ] `react-redux-loading-bar`. As a progress bar displayed on top.
 
 ## Requirements
 
-[x] Section menu: Should support scroll to the right to reveal more Section links, if present.
+[ x ] Section menu: Should support scroll to the right to reveal more Section links, if present.
 
-[x] Vertical scroll behaviour: When a user scrolls 400 pixels, the section menu should be hidden. This functionality should be implemented without the use of any library,
+[ x ] Vertical scroll behaviour: When a user scrolls 400 pixels, the section menu should be hidden. This functionality should be implemented without the use of any library,
 
 ## Considerations
 
@@ -71,12 +71,12 @@ When the app is launched the default theme is used and after 2 seconds the light
 
 ## Bonus
 
-[x] When scrolling 800 pixels only burger is visible
+[ x ] When scrolling 800 pixels only burger is visible
 
-[x] When clicking on burger menu the lateral menu
+[ x ] When clicking on burger menu the lateral menu
 should open, listing all the sections.
 
-[] Consider implementing SSR
+[ - ] Consider implementing SSR
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
