@@ -15,8 +15,6 @@ The app is build for production and place the code into `build` folder
 
 ## 🛠️ Tests
 
-The unit tests are located in `src/**/__tests__/`.
-
 - `npm test` runs all the tests
 
 [ x ] actions
